@@ -48,7 +48,7 @@ const App = () => {
 			`https://api.github.com/users/${username}/repos?per_page=5&sort=created:asc&clien_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
 		);
 
-		setRepos(res.date);
+		setRepos(res.data);
 		setLoading(false);
 	};
 
